@@ -19,8 +19,8 @@ spring:
       ddl-auto: create
 
   batch:
-#    job:
-#      name: ${job.name:NONE}
+    job:
+      name: ${job.name:NONE}
     jdbc:
       initialize-schema: always
 
