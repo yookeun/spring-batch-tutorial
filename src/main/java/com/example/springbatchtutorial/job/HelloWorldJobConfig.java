@@ -1,4 +1,4 @@
-package com.example.springbatchtutorial.job.helloworld;
+package com.example.springbatchtutorial.job;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.batch.core.Job;
@@ -26,6 +26,8 @@ public class HelloWorldJobConfig {
 
     private final JobRepository jobRepository;
     private final PlatformTransactionManager transactionManager;
+
+
 
     @Bean
     public Job helloWorldJob(Step helloWorldStep) {
